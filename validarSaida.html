@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Listar saidas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Koulen&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <script src="validarSaida.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="esquerda">
+      <img src="portaLOGO.png" alt="Porta" />
+      <h2>CONTROLE DE SAIDAS | SAIDAS</h2>
+    </div>
+    <nav>
+      <a href="index.html">MENU</a> |
+      <a href="#" class="ativo">SOLICITAÇÕES</a> |
+      <a href="./saidas.html">LISTAR</a>
+      <a href="./cadastrarSaida.html">CADASTRAR</a>
+      <a href="./atualizarSaida.html">ATUALIZAR</a>
+      <a href="./apagarSaida.html">APAGAR</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="caixa">
+        <h2>Pedidos de Saídas</h2>
+        <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Aluno</th>
+                <th>Motivo</th>
+                <th>Local</th>
+                <th>Status</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tabelaSaidas"></tbody>
+          </table>
+          
+          <div id="res"></div>
+    </div>
+  </main>
+
+  <footer>
+    <span>Controle de saídas<br>Feito por Guilherme Bello</span>
+    <span>Todos os direitos reservados<br>© 2025</span>
+  </footer>
+</body>
+</html>

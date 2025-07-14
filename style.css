@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background-color: #2385CC;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .esquerda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .esquerda img {
+    height: 40px;
+  }
+  
+  .esquerda h2 {
+    font-family: 'Koulen', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #63ade1;
+  }
+  
+  nav a.ativo {
+    background-color: #63ade1;
+  }
+  
+  main {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .caixa {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #lista-alunos {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  #lista-alunos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+  }
+  
+  #lista-alunos li:hover {
+    background-color: #f9f9f9;
+  }
+  #res {
+    display: none;
+    background-color: #a8cfeb; 
+    color: #203750; 
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto 0 auto;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .icone-editar {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  .icone-editar:hover {
+    opacity: 1;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #2385CC;
+  }
+  
+  input, textarea {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #63ade1;
+    box-shadow: 0 0 0 2px rgba(57, 73, 171, 0.2);
+  }
+  
+  button {
+    background-color: #2385CC;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0b7ccd;
+  }
+  
+  .main {
+    display: flex;
+    flex: 1;
+    padding: 30px;
+    gap: 30px;
+  }
+  
+  .fila {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+  }
+  
+  .fila h3 {
+    color: #2385CC;
+    border-bottom: 2px solid #2385CC;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .content h1 {
+    color: #A8A8A8;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+  }
+  
+  .botoes {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .botao {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #2385CC;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .botao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .botao img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .botao span {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .icon-blue {
+    filter: invert(28%) sepia(96%) saturate(1532%) hue-rotate(192deg) brightness(96%) contrast(97%);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  td button {
+    margin: 2px;
+  }
+  
+  footer {
+    background-color: #2385CC;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
