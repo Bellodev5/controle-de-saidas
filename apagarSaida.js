@@ -14,9 +14,9 @@ consultarS.addEventListener('click', (e) =>{
       res.innerHTML = ''; 
   
       if (dados && dados.codSaida) {
-          document.getElementById('nome').value = dados.nome;
+          document.getElementById('nome').value = dados.nomeAluno;
           document.getElementById('motivo').value = dados.motivo;
-          document.getElementById('local').value = dados.local;    
+          document.getElementById('local').value = dados.localDestino;    
           } else {
           res.innerHTML = `<p>Nenhuma saida encontrada.</p>`;
       }
@@ -37,9 +37,9 @@ apagarS.addEventListener('click', (e) => {
         })
         .then(response => {
           if (response.ok) {
-            res.innerHTML += `<p>Saída deletada com sucesso.</p>`;
+            res.innerHTML += `Saída deletada com sucesso.`
           } else {
-            res.innerHTML += `<p>Erro ao deletar saída'.</p>`;
+            res.innerHTML += `Erro ao deletar saída'.`
           }
         })
         .catch(error => console.error('Erro:', error));      

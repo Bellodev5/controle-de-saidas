@@ -105,7 +105,7 @@ cadastrarSaida.addEventListener('click', (e) => {
     nomeProfessor: nomeProfessor.value,
     dataSolicitacao: document.getElementById('dataSolicitacao').value,
     horaSaida: document.getElementById('horaSaida').value,
-    horaRetorno:document.getElementById('dataSolicitacao').value
+    horaRetorno:document.getElementById('horaRetorno').value
   };
   
 

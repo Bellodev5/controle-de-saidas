@@ -75,17 +75,21 @@ atualizarS.addEventListener('click', function(e) {
     e.preventDefault();
 
     let codSaida = document.getElementById('codSaida').value;
+
     let dados = {
-        
-        nomeAluno: document.getElementById('nomeAluno').value,
-        nomeProfessor: document.getElementById('nomeProfessor').value,
-        motivo: document.getElementById('motivo').value,
-        localDestino: document.getElementById('localDestino').value,
-        status: document.getElementById('status') ? document.getElementById('status').value : 'PENDENTE',
         dataSolicitacao: document.getElementById('dataSolicitacao').value,
         horaSaida: document.getElementById('horaSaida').value,
-        horaRetorno: document.getElementById('horaRetorno').value
+        horaRetorno: document.getElementById('horaRetorno').value,
+        motivo: document.getElementById('motivo').value,
+        localDestino: document.getElementById('localDestino').value,
+        status: 'pendente',
+        nomeAluno: document.getElementById('nomeAluno').value,
+        nomeProfessor: document.getElementById('nomeProfessor').value,
+        aluno_cod: Number(document.getElementById('aluno_id').value),
+        professor_cod: Number(document.getElementById('professor_id').value)
     };
+
+    console.log("Enviando PUT:", dados);
 
     fetch(`http://localhost:8081/saida/${codSaida}`, {
         method: 'PUT',
@@ -105,3 +109,4 @@ atualizarS.addEventListener('click', function(e) {
         res.innerText = 'Erro ao atualizar saída!';
     });
 });
+

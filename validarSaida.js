@@ -29,6 +29,9 @@ function carregarSaidas() {
       return response.json();
     })
     .then(saidas => {
+      
+      saidas.sort((a, b) => b.codSaida - a.codSaida);
+
       tabela.innerHTML = '';
       saidasMapeadas = {};
 
