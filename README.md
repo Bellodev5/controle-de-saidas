@@ -1,6 +1,6 @@
 # 📌 Controle de Saídas
 
-Sistema web simples para gerenciar solicitações de saída de alunos em ambiente escolar. Desenvolvido com foco em organização, supervisão e agilidade entre alunos, professores e responsáveis pela liberação.
+Sistema web para gerenciar solicitações de saída de alunos em ambiente escolar. Desenvolvido com foco em organização, supervisão e agilidade entre alunos, professores e responsáveis pela liberação.
 
 ---
 
@@ -22,7 +22,7 @@ Sistema web simples para gerenciar solicitações de saída de alunos em ambient
 
 ---
 
-## 🧠 Destaque técnico: Uso de `Promise.all()` -> array de promessas
+## 🧠 Novo conhecimento técnico: Uso de `Promise.all()` -> array de promessas
 
 Uma parte interessante do projeto é a atualização de status das saídas, onde é necessário obter os IDs do aluno e do professor **ao mesmo tempo** antes de fazer o PUT.
 Usei o método `Promise.all()` com um **array de promessas**:
