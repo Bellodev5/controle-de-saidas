@@ -11,7 +11,7 @@ consultarP.addEventListener('click', (e) =>{
   })
   .then(dados => {
       console.log(dados);
-      res.innerHTML = ''; 
+    res.style.display = 'block';
   
       if (dados && dados.codProfessor) {
           document.getElementById('nome').value = dados.nome;
@@ -29,7 +29,7 @@ consultarP.addEventListener('click', (e) =>{
 apagarP.addEventListener('click', (e) => {
   e.preventDefault()
     let codProfessor = document.getElementById('codProfessor').value;
-    res.innertHTML = '';
+    res.style.display = 'block';
     fetch(`http://localhost:8081/professor/${codProfessor}`, {
           method: 'DELETE'
         })
