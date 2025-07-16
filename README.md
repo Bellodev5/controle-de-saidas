@@ -1,4 +1,4 @@
-# 📌 Controle de Saídas
+# 📌 [Controle de Saídas(https://controle-de-saidas-sigma.vercel.app/))]
 
 Sistema web para gerenciar solicitações de saída de alunos em ambiente escolar. Desenvolvido com foco em organização, supervisão e agilidade entre alunos, professores e responsáveis pela liberação.
 
